@@ -7,10 +7,8 @@ import org.springframework.ui.Model;
 @Controller
 public class HelloController {
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String home(Model model) {
-
-        System.out.println("Controller executed!");
         model.addAttribute("message", "Hello, World!");
         return "index"; // returns the index.html Thymeleaf template
     }

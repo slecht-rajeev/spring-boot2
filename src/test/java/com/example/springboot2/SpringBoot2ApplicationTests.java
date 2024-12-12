@@ -18,8 +18,8 @@ class SpringBoot2ApplicationTests {
 	private MockMvc mockMvc;
 
 	@Test
-	public void testHelloEndpoint() throws Exception {
-		mockMvc.perform(get("/hello"))
+	public void testRootEndpoint() throws Exception {
+		mockMvc.perform(get("/"))
 				.andExpect(status().isOk())
 				.andExpect(view().name("index")) // Checks if the view name is "index"
 				.andExpect(model().attribute("message", "Hello, World!")); // Checks the model attribute
