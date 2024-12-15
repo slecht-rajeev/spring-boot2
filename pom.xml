@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringBoot2</name>
 	<description>SpringBoot2</description>
+	<packaging>war</packaging>
 	<url/>
 	<licenses>
 		<license/>
